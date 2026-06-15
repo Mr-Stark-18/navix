@@ -259,6 +259,266 @@
 </head>
 <body id="top">
 
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" aria-label="SPEQULA home">
+      <span class="brand-chip"><img class="brand-logo" src="data:image/png;base64,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" alt="SPEQULA" />
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#how">How we work</a></li>
+        <li><a href="#platform">Platform</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-primary">Start sourcing</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#how">How we work</a>
+    <a href="#platform">Platform</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn btn-primary">Start sourcing</a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <span class="eyebrow">AI-Native Procurement</span>
+        <h1>Building the Future of <span class="ai">Global Sourcing</span>.</h1>
+        <p class="hero-sub">SPEQULA is building a technology-enabled sourcing and trade platform designed to make cross-border procurement more reliable, transparent and efficient.</p>
+        <p class="hero-sub hero-sub-2">We believe software and AI can reduce friction across supplier discovery, production management, quality assurance and trade operations.</p>
+        <div class="hero-actions">
+          <a href="#how" class="btn btn-ghost">See how it works</a>
+          <a href="#contact" class="btn btn-primary">Start sourcing <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <!-- AI hub driving the five stages of end-to-end procurement -->
+      <div class="reveal">
+        <div class="netwrap" role="img" aria-label="Diagram showing an AI hub connected to the five stages of end-to-end procurement: Sourcing, Production Tracking, Quality Assurance, Logistics and Financing">
+          <svg viewBox="0 0 560 460" xmlns="http://www.w3.org/2000/svg">
+            <!-- faint globe -->
+            <circle class="net-globe" cx="280" cy="220" r="150"/>
+            <ellipse class="net-globe" cx="280" cy="220" rx="150" ry="58"/>
+            <ellipse class="net-globe" cx="280" cy="220" rx="74" ry="150"/>
+            <path class="net-globe" d="M130 220h300M280 70v300"/>
+
+            <!-- spoke base lines -->
+            <path class="net-line" d="M280 220 L280 70"/>
+            <path class="net-line" d="M280 220 L423 174"/>
+            <path class="net-line" d="M280 220 L368 341"/>
+            <path class="net-line" d="M280 220 L192 341"/>
+            <path class="net-line" d="M280 220 L137 174"/>
+            <!-- animated flow overlays -->
+            <path class="net-flow flowA" d="M280 220 L280 70"/>
+            <path class="net-flow flowB" d="M280 220 L423 174"/>
+            <path class="net-flow flowC" d="M280 220 L368 341"/>
+            <path class="net-flow flowA" d="M280 220 L192 341"/>
+            <path class="net-flow flowB" d="M280 220 L137 174"/>
+
+            <!-- stage nodes -->
+            <g><circle class="net-node-pulse pulse"    cx="280" cy="70"  r="14"/><circle class="net-node" cx="280" cy="70"  r="9"/></g>
+            <g><circle class="net-node-pulse pulse d1" cx="423" cy="174" r="14"/><circle class="net-node" cx="423" cy="174" r="9"/></g>
+            <g><circle class="net-node-pulse pulse d2" cx="368" cy="341" r="14"/><circle class="net-node" cx="368" cy="341" r="9"/></g>
+            <g><circle class="net-node-pulse pulse d3" cx="192" cy="341" r="14"/><circle class="net-node" cx="192" cy="341" r="9"/></g>
+            <g><circle class="net-node-pulse pulse d4" cx="137" cy="174" r="14"/><circle class="net-node" cx="137" cy="174" r="9"/></g>
+
+            <!-- stage labels -->
+            <text class="net-label" x="280" y="44" text-anchor="middle">Sourcing</text>
+            <g text-anchor="start">
+              <text class="net-label" x="443" y="170">Production</text>
+              <text class="net-label" x="443" y="189">Tracking</text>
+            </g>
+            <g text-anchor="start">
+              <text class="net-label" x="388" y="356">Quality</text>
+              <text class="net-label" x="388" y="375">Assurance</text>
+            </g>
+            <g text-anchor="start">
+              <text class="net-label" x="90" y="346">Compliance</text>
+              <text class="net-label" x="90" y="365">& Logistics</text>
+            </g>
+            <text class="net-label" x="115" y="179" text-anchor="end">Financing</text>
+
+            <!-- central hub -->
+            <circle class="net-hub-ring hubring" cx="280" cy="220" r="30"/>
+            <circle class="net-hub" cx="280" cy="220" r="23"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE WORK -->
+  <section class="section tint" id="how">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">How we work</span>
+        <h2>A clear path from supplier to shipment.</h2>
+        <p>Every stage hands off to the next, with our team and systems coordinating the work end to end.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="sn">1</div>
+          <h3>Supplier Discovery</h3>
+          <p>We identify suitable manufacturing partners.</p>
+        </div>
+        <div class="step reveal">
+          <div class="sn">2</div>
+          <h3>Sampling &amp; Validation</h3>
+          <p>We coordinate sampling and qualification.</p>
+        </div>
+        <div class="step reveal">
+          <div class="sn">3</div>
+          <h3>Production Management</h3>
+          <p>We track production and execution.</p>
+        </div>
+        <div class="step reveal">
+          <div class="sn">4</div>
+          <h3>Quality &amp; Logistics</h3>
+          <p>We coordinate inspections and shipment readiness.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLATFORM / FEATURES -->
+  <section class="section" id="platform">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">The platform</span>
+        <h2>Four agents, one procurement engine.</h2>
+        <p>The intelligence we are building into SPEQULA, each agent designed to take an entire workflow off your plate.</p>
+      </div>
+      <div class="feat-grid feat-grid-4">
+        <article class="feat reveal">
+          <div class="ficon blue"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 3v4h4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 13l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="feat-title"><h3>Sourcing Intelligence</h3><span class="soon">Coming soon</span></div>
+          <p>Turns raw RFQs into structured quotation requests and pairs each one with the right suppliers, powered by a model trained on real supplier data.</p>
+        </article>
+        <article class="feat reveal">
+          <div class="ficon green"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19V5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="8" cy="8" r="2" stroke="currentColor" stroke-width="1.8"/><circle cx="13" cy="13" r="2" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="9" r="2" stroke="currentColor" stroke-width="1.8"/><path d="M4 19h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <div class="feat-title"><h3>Production Copilot</h3><span class="soon">Coming soon</span></div>
+          <p>Works alongside the operations team to keep production on schedule, flag delays early and run KPI-based quality inspection.</p>
+        </article>
+        <article class="feat reveal">
+          <div class="ficon green"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="feat-title"><h3>Compliance Engine</h3><span class="soon">Coming soon</span></div>
+          <p>Handles documentation and compliance end to end, gathering the inputs it needs and checking every shipment for gaps before they become problems.</p>
+        </article>
+        <article class="feat reveal">
+          <div class="ficon blue"><svg viewBox="0 0 24 24" fill="none"><path d="M3 7l9-4 9 4-9 4-9-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M3 7v6l9 4 9-4V7" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 11v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <div class="feat-title"><h3>SPEQuLa OS</h3><span class="soon">Coming soon</span></div>
+          <p>An operating system with buyer and supplier CRMs built in, so every conversation stays in one place and nothing stalls in handoff.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST / WHY PARTNER -->
+  <section class="section" id="why">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Why SPEQULA</span>
+        <h2>A partner built for confident procurement.</h2>
+        <p>We take responsibility for the parts of cross-border sourcing that usually keep buyers up at night.</p>
+      </div>
+      <div class="trust-grid">
+        <article class="trust reveal">
+          <div class="ticon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12h4l2 5 4-12 2 7h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>End-to-End Management</h3>
+          <p>One team owns the order from supplier discovery through to shipment, so nothing falls between the cracks.</p>
+        </article>
+        <article class="trust reveal">
+          <div class="ticon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Guaranteed Quality</h3>
+          <p>Inspections run against KPIs agreed up front, so what ships is what you specified.</p>
+        </article>
+        <article class="trust reveal">
+          <div class="ticon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.7"/></svg></div>
+          <h3>AI-Enabled Efficiency</h3>
+          <p>Software removes the manual steps and handoffs that slow cross-border orders down.</p>
+        </article>
+        <article class="trust reveal">
+          <div class="ticon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2v20M17 6.5c0-2-2.2-3-5-3s-5 .8-5 3 2.2 3 5 3.5 5 1.5 5 3.5-2.2 3-5 3-5-1-5-3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Competitive Pricing</h3>
+          <p>Direct manufacturer relationships and volume keep landed costs sharp.</p>
+        </article>
+      </div>
+
+      <div class="founders reveal">
+        <span class="founders-head">Founders</span>
+        <div class="founders-names">
+          <div class="founder">
+            <div class="fn">Bhavya Singhal</div>
+            <div class="fm">IIT Bombay</div>
+          </div>
+          <div class="founder">
+            <div class="fn">Aryaman Bansal</div>
+            <div class="fm">IIT Bombay</div>
+          </div>
+        </div>
+        <p class="founders-line">Building SPEQULA after studying the challenges faced by manufacturers and buyers in cross-border trade.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-cta reveal">
+        <span class="eyebrow">Contact</span>
+        <h2>Looking to streamline your procurement from South East Asia</h2>
+        <a href="mailto:source@spequla.com?subject=Sourcing%20enquiry%20SPEQULA" class="btn btn-primary">Connect with Us <span class="arr" aria-hidden="true">→</span></a>
+      </div>
+      <div class="reveal">
+        <div class="contact-card">
+          <a class="contact-row" href="mailto:source@spequla.com">
+            <span class="cicon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2.5" stroke="currentColor" stroke-width="1.8"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span><span class="ck">Email: </span><span class="cv">source@spequla.com</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <span class="footer-logo-chip"><img src="data:image/png;base64,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" alt="SPEQULA" /></span>
+        <p class="footer-about">An AI-native sourcing and supply chain platform covering matching, production tracking, quality, compliance, logistics and financing for South East Asia.</p>
+      </div>
+      <div>
+        <h5>Platform</h5>
+        <ul>
+          <li><a href="#how">How we work</a></li>
+          <li><a href="#platform">Platform</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Get in touch</h5>
+        <ul>
+          <li><a href="mailto:source@spequla.com">source@spequla.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> SPEQULA. All rights reserved.</span>
+      <span>AI-native sourcing · South East Asia</span>
+    </div>
+  </div>
+</footer>
+
 <script>
 (function(){
   "use strict";
