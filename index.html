@@ -174,7 +174,6 @@
     .reveal{opacity:1; transform:none}
   }
 
-
   /* ===================== HERO ===================== */
   .hero{position:relative; padding:74px 0 84px; overflow:hidden}
   .hero::before{content:""; position:absolute; inset:0; pointer-events:none;
@@ -263,17 +262,6 @@
   .prob-foot{margin-top:34px; font-size:1.06rem; color:var(--ink-soft); max-width:74ch}
   .prob-foot b{color:var(--navy-ink); font-weight:600}
 
-  /* ===================== THESIS (Path B) ===================== */
-  .thesis h2 .accent{color:#8298ff}
-  .thesis-lead{margin-top:18px; color:rgba(255,255,255,.72); font-size:1.1rem; max-width:60ch}
-  .thesis-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:46px}
-  .thesis-card{background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.12); border-radius:var(--radius); padding:28px 26px}
-  .thesis-card .ticon{width:46px; height:46px; border-radius:12px; display:grid; place-items:center; margin-bottom:18px;
-    background:rgba(255,255,255,.08); color:#fff}
-  .thesis-card .ticon svg{width:23px; height:23px}
-  .thesis-card h3{color:#fff; font-size:1.12rem; margin-bottom:8px}
-  .thesis-card p{color:rgba(255,255,255,.64); font-size:.95rem}
-
   /* ===================== PLATFORM (five layers) ===================== */
   .layers{margin-top:48px; display:flex; flex-direction:column; gap:14px}
   .layer{display:flex; align-items:center; gap:20px; background:var(--panel); border:1px solid var(--line);
@@ -309,14 +297,12 @@
 
   @media (max-width:980px){
     .prob-grid{grid-template-columns:1fr}
-    .thesis-grid{grid-template-columns:1fr}
     .fly-grid{grid-template-columns:1fr}
     .layer{align-items:flex-start}
   }
   @media (max-width:560px){
     .fly-steps{grid-template-columns:1fr}
   }
-
 
   /* ===================== HOW IT WORKS ===================== */
   .how-steps{display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin-top:50px}
@@ -631,7 +617,7 @@
     <div class="wrap">
       <div class="section-head reveal">
         <span class="eyebrow clay">The problem</span>
-        <h2>Sourcing from India's long tail is a trust problem.</h2>
+        <h2>Sourcing beyond the few big names is a trust problem.</h2>
         <p>The demand is here. The makers are here. What's missing is a reliable way to know who can deliver, and the plumbing to run the order once you do.</p>
       </div>
       <div class="prob-grid">
@@ -652,37 +638,12 @@
           <div><h3>Working capital stays tight</h3><p>Makers are under-financed and the people sourcing from them carry the exposure. Capital is mispriced because real performance is invisible.</p></div>
         </div>
       </div>
-      <p class="prob-foot reveal"><b>There's no neutral system-of-record for who, in the long tail, can be trusted.</b> That's the gap SPEQULA is built to close, starting with what can be measured on the ground.</p>
-    </div>
-  </section>
-
-  <!-- ===================== THESIS / PATH B ===================== -->
-  <section class="section dark thesis" id="thesis">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow light">Our approach</span>
-        <h2>We don't sit in the middle. We're the <span class="accent">operating system underneath.</span></h2>
-        <p class="thesis-lead">SPEQULA is the operating system for export trade: the single place buyers, agents and exporters run the whole order. We power the transaction and the money flow, never goods on our books.</p>
-      </div>
-      <div class="thesis-grid">
-        <div class="thesis-card reveal">
-          <span class="ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8l9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/></svg></span>
-          <h3>Asset-light</h3><p>No inventory, no trading risk. We orchestrate the order; we never carry the goods.</p>
-        </div>
-        <div class="thesis-card reveal d1">
-          <span class="ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 21h14"/><path d="M5 9 2.5 14a3 3 0 0 0 5 0L5 9zM19 9l-2.5 5a3 3 0 0 0 5 0L19 9zM5 9l7-3 7 3"/></svg></span>
-          <h3>Neutral</h3><p>Buyers never see underlying maker names or cost breakdowns until a purchase order. We don't compete with either side.</p>
-        </div>
-        <div class="thesis-card reveal d2">
-          <span class="ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span>
-          <h3>Data-compounding</h3><p>Every order verified through us makes the network's intelligence sharper, and harder to copy.</p>
-        </div>
-      </div>
+      <p class="prob-foot reveal"><b>There's no neutral, trusted way to know which of these makers will actually deliver.</b> That's the gap SPEQULA closes, starting with what we can verify on the ground.</p>
     </div>
   </section>
 
   <!-- ===================== THE PLATFORM ===================== -->
-  <section class="section" id="platform">
+  <section class="section warm" id="platform">
     <div class="wrap">
       <div class="section-head reveal">
         <span class="eyebrow">The platform</span>
@@ -715,7 +676,7 @@
           <span class="licon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="19" cy="20" r="1.4"/><path d="M2 3h3l2.5 12.5a2 2 0 0 0 2 1.6h8a2 2 0 0 0 2-1.6L22 7H6.5"/></svg></span>
           <div class="layer-body">
             <div class="layer-top"><h3>Sourcing on demand</h3><span class="tag tag-soon">Coming soon</span></div>
-            <p>Buyers act on verified scores and source directly through the platform, and we earn a commission on order value, holding no goods.</p>
+            <p>Source directly from verified makers through the platform, with pricing, terms and orders managed in one place.</p>
           </div>
         </div>
         <div class="layer reveal d4">
@@ -733,29 +694,28 @@
   <section class="section tint" id="flywheel">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="eyebrow">Why it gets better with use</span>
-        <h2>Every inspection makes the network smarter.</h2>
-        <p>Quality control isn't just a service; it's a sensor. Each verified order adds to a picture of who delivers, building a score no single buyer could assemble alone.</p>
+        <span class="eyebrow">Trust, verified</span>
+        <h2>Every inspection builds a track record you can trust.</h2>
+        <p>Each inspection adds to a maker's verified track record across real orders. So when you source through us, you're buying from makers whose quality is already proven.</p>
       </div>
       <div class="fly-grid">
         <div class="fly-steps reveal">
           <div class="fly-step"><span class="fn">1</span><h4>More inspections</h4><p>Run on live orders, on the factory floor, not self-reported claims.</p></div>
           <div class="fly-step"><span class="fn">2</span><h4>Richer data</h4><p>Defect types, pass rates and on-time performance, captured order by order.</p></div>
-          <div class="fly-step"><span class="fn">3</span><h4>Cross-buyer scores</h4><p>One maker, seen across many buyers' shipments: a fuller, fairer picture.</p></div>
-          <div class="fly-step"><span class="fn">4</span><h4>More orders routed</h4><p>Buyers trust the score, repeat with confidence, and the loop tightens.</p></div>
-          <div class="fly-loop">↻ &nbsp;the loop compounds with every order</div>
+          <div class="fly-step"><span class="fn">3</span><h4>A clear maker score</h4><p>Quality, defect rates and on-time delivery, combined into one score you can read at a glance.</p></div>
+          <div class="fly-step"><span class="fn">4</span><h4>Source with confidence</h4><p>You pick makers with a proven record, and reorder knowing exactly what to expect.</p></div>
+          <div class="fly-loop">↻ &nbsp;every order sharpens the record</div>
         </div>
         <div class="score-card reveal d2">
-          <span class="sk">A maker's cross-buyer score</span>
+          <span class="sk">A maker's verified score</span>
           <div class="sv">87<span>/100</span></div>
-          <p class="sd">Earned after 15–25 verified orders, built from many buyers' shipments, owned by none of them.</p>
+          <p class="sd">Earned across 15–25 verified orders, so you can see a maker's real quality and reliability at a glance.</p>
           <div class="sline"></div>
-          <p class="snote">No single buyer sees enough volume with one maker to build this. Together, the network can.</p>
+          <p class="snote">A track record built on real shipments, not promises, so you can source from new makers with confidence.</p>
         </div>
       </div>
     </div>
   </section>
-
 
   <!-- ===================== HOW IT WORKS ===================== -->
   <section class="section" id="how">
@@ -774,7 +734,7 @@
         <div class="how-step reveal d1">
           <span class="hn">02</span>
           <h3>Matched to verified makers</h3>
-          <p>We line up makers whose track record fits your order, so you skip sifting the long tail yourself.</p>
+          <p>We line up makers whose track record fits your order, so you skip sifting through hundreds of makers yourself.</p>
         </div>
         <div class="how-step reveal d2">
           <span class="hn">03</span>
@@ -944,7 +904,7 @@
           <div class="ifeat"><span class="if-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16h16"/><path d="M8 16l3-4 3 2 4-6"/></svg></span><div><h4>Transparent AQL math</h4><p>Lot size, sample size and every accept/reject number are shown in full, to ISO&nbsp;2859-1.</p></div></div>
           <div class="ifeat"><span class="if-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17a4 4 0 0 1 0-8 6 6 0 0 1 11.5-2A4.5 4.5 0 0 1 18 17z"/><path d="M12 12v6M9 15l3 3 3-3"/></svg></span><div><h4>Works offline</h4><p>Factory wifi is unreliable, so every step works without it; photos compress and sync when you reconnect.</p></div></div>
           <div class="ifeat"><span class="if-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></span><div><h4>Tuned per category</h4><p>Attribute and functional checklists configured for each corridor sector, like glaze and calibre checks for ceramics, or water and flush tests for sanitaryware.</p></div></div>
-          <div class="ifeat"><span class="if-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/></svg></span><div><h4>A clean, signed report</h4><p>Generated on the device as a PDF and synced to the platform, feeding the maker's cross-buyer score.</p></div></div>
+          <div class="ifeat"><span class="if-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/></svg></span><div><h4>A clean, signed report</h4><p>Generated on the device as a PDF and synced to the platform, feeding the maker's verified score.</p></div></div>
         </div>
       </div>
     </div>
@@ -980,7 +940,7 @@
       </div>
       <div class="vision-end reveal">
         <span class="ve-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
-        <p><b>The end state:</b> SPEQULA becomes the system of record and the financial backbone for India's export long tail. The data flywheel is the moat; the trust it builds is what lets every order move faster.</p>
+        <p><b>Where this is going:</b> one trusted system for India's export trade, where every order, from first quote to final payment, runs in one place, and each maker's track record keeps getting stronger.</p>
       </div>
     </div>
   </section>
@@ -998,7 +958,7 @@
         <div class="contact-card reveal d1">
           <a class="crow" href="mailto:bhavya@spequla.com">
             <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
-            <span><span class="ck">Email</span><span class="cv">bhavya@spequla.com</span></span>
+            <span><span class="ck">Email: </span><span class="cv">bhavya@spequla.com</span></span>
           </a>
         </div>
       </div>
@@ -1041,7 +1001,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year">2026</span> SPEQULA · Advaya LLP. All rights reserved.</span>
+      <span>© <span id="year">2026</span> SPEQULA · All rights reserved.</span>
       <span class="mono">Neutral export infrastructure · India</span>
     </div>
   </div>
@@ -1082,7 +1042,6 @@
   } else { reveals.forEach(function(el){ el.classList.add('in'); }); }
 })();
 </script>
-
 
 </body>
 </html>
